@@ -47,39 +47,44 @@ body {
 
 
 /* Right Container */
+/* Right Container */
 .right_container {
     width: 65%;
     padding: 30px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    overflow: scroll;
+    flex-wrap: wrap; /* 넘치면 줄바꿈 */
+    overflow: hidden;  /* 콘텐츠가 넘치든 넘치지 않든 스크롤바가 항상 보임 */
 }
 
 .right_container section {
-    background-color: #F5EFE7;
+    background-color: white;
     padding: 30px 60px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: calc(100% - 120px);
-    height: calc(100% - 80px);
+    height: calc(100% - 60px);
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.skiis{
+.skill {
     margin-bottom: 10px;
 }
 
-.skii-bar{
-    background-color: #213555;
+.skill-bar {
+    background-color: #e0e0e0;
     border-radius: 5px;
 }
 
 .skill-level {
-    height: 20px;
-    border-radius: 5px;
-    background-color: #F5EFE7;
-    position: relative;
-    box-sizing:border-box
+    background-color: #E195AB;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    text-align: right;
+    padding-right: 10px;
+    box-sizing: border-box;
 }
+
